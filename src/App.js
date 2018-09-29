@@ -32,7 +32,7 @@ class App extends Component {
   zipCodeChanged(event) {
     console.log(event.target.value);
 
-    if(event.target.value.length != 5) {
+    if(event.target.value.length !== 5) {
       this.setState({cities: []});
       return;
     }
